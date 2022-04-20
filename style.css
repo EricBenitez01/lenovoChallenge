@@ -1,0 +1,540 @@
+:root{
+    --white: #ffffff;
+    --black: #000000;
+    --grey: #cccccc;
+    --blue: #00669e;
+    --bordo: #af0e4e;
+    --gris-oscuro: #555555;
+    --gris-dark: #00000080;
+    --gris-suave: #545454;
+    --azul-oscuro: #0d5c91; 
+    --red: #af0200;
+    --smoke: #f8f8f8;
+    --rojo: #e02020; 
+
+
+    --titulos: 'Yusei Magic', sans-serif;
+    --subtitulos: 'Kulim Park', sans-serif;
+    --textos: 'Roboto', sans-serif;
+
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* font-family: 'DM Sans', sans-serif; */
+    font-family: 'Lato', sans-serif;
+}
+
+body{
+    background-color: var(--white);
+    color: var(--black);
+    font-size: 16px;    
+}
+hr{
+    margin: 10px 0;
+}
+a{
+    text-decoration: none;
+    color: var(--black);
+}
+ul{
+    list-style: none;
+}
+.conteiner{
+    
+    margin: auto;
+}
+.menu-btn {
+    cursor: pointer;
+    position: absolute;
+    top: 55px;
+    right: 30px;
+    z-index: 2;
+    font-size: 18px;
+    display: none;
+}
+.nav-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+.nav-1 ul{
+    display: flex;
+    justify-content: space-between;
+    width: 256px;
+    height: 16px;
+    margin-right: 8px;
+    
+    
+}
+.nav-1 ul li{
+    margin: 0 25px 0 0;
+    
+}
+#S{
+    color: #000000;
+}
+/* arreglar icon de la lupa */
+.nav-2{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 12px;
+    align-items: center
+}
+.nav-2 ul{
+    display: flex;
+    justify-content: space-between;
+}
+a{
+    margin: 2px;
+}
+.nav-2 ul li {
+    margin: 0 45px 10px 0;
+    font-size: 7px;
+    font-weight: bold;
+}
+#searchBar{
+    border-radius: 5px;
+    width: 400px;
+    height: 35px;
+    font-size: 14px;
+    margin-right: 0;
+    padding-right: 0;
+}
+#formSearch{
+    margin-right: 0;
+    padding-right: 0;
+}
+.searchBttn{
+    border-radius: 5px;
+    width: 40px;
+    height: 35px;
+    color: var(--white);
+    background-color: #000000;
+    padding-left: 0;
+    margin-left: 0;
+}
+.search{
+    display: flex;
+    border: none;
+}
+
+.nav-3{
+    background-color: var(--smoke);
+}
+.nav-3 ul{    
+    display: flex;
+    justify-content: space-around;
+    font-size: 8px;
+    width: 70%;
+    align-content: center;
+    margin: auto;
+}
+.nav-3 ul li {
+    margin: 5px 10px 5px 5px;
+
+}
+.banner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bordo);
+    text-align: center;
+    letter-spacing: -0.13px;
+    height: 45px;
+    border-bottom: 1px solid black;
+}
+.banner h2 {
+    font-size: 16px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+.banner a {
+    margin: 20px;
+    color: var(--white);
+    text-decoration: underline;
+}
+.nav-4 ul{
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    margin: 8px;
+    font-size: 15px;
+}
+#more{
+    color: var(--blue);
+}
+/* main */
+.conteiner2{
+    width: 90%;
+    margin: auto;
+    align-items: center;
+    justify-content: space-around;
+
+}
+#line{
+    color: var(--grey);
+}
+#priceUL{
+    margin-top: 45px;
+    
+}
+#priceUL li{
+    margin:  15px 0px ;
+    font-size: 14px;
+    display: flex;
+}
+#model{
+    font-size: 32px;
+}
+.productos{
+    display: flex;
+    margin:0;
+}
+.price{
+    width: 20%;
+    font-size: 14px;
+    margin-top: 25px;
+    margin-right: 50px;
+    height: 200px;
+}
+.square{
+    margin-right: 5px;
+    border-radius: 3px;
+    width: 16px;
+    height: 16px;
+    background-color: #000000;
+
+}
+.price ul li{
+    margin: 5px;
+}
+.cards{
+    width: 80%;
+    
+}
+#prices{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 7px;
+}
+.low{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 15px;
+    margin-left: 0;
+}
+.high{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #BCBCBC;
+    border-radius: 4px;
+    opacity: 1;
+    margin: 5px;
+    padding: 10px;
+}
+.hiden{
+    display: none;
+}
+.offer{
+    background-color: var(--red);
+    color: var(--white);
+    border-radius: 4px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    text-align: center;  
+    height: 6%;
+    width: 70%;
+    font-size: 12px;
+}
+.offer1{
+    color: var(--white);
+    border-radius: 4px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    text-align: center;  
+    height: 6%;
+    width: 70%;
+    font-size: 12px;
+}
+.offer p{
+    display: flex;
+    align-items: center;
+}
+.Matching{
+    display: none;
+}
+.high p {
+    margin-left: 10px;
+}
+/* cards */
+.news-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 70px 0;
+    
+}
+.cardConteiner{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #BCBCBC;
+    border-radius: 5px;
+    opacity: 1;
+    height: 410px;  
+    padding: 5px;
+    margin: 5px;
+    
+}
+
+.text{
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.text2{
+    display: flex;
+    font-size: 9px;
+}
+.img1{
+    margin: 9px;
+    padding: 5px;
+}
+.img2{
+    margin: 9px;
+    padding: 5px;
+}
+.news-cards img {
+    width: 100%;
+    height: 180px;
+}
+  
+.news-cards h3 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+  
+.news-cards a {
+    padding: 10px 0;
+    display: inline-block;
+    font-weight: bold;
+}
+.Btn{
+    display: flex;
+    background-color: var(--azul-oscuro);
+    color: var(--white);
+    border-radius: 4px;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;    
+}
+.Btn a{
+    text-align: center;
+    color: #f8f8f8;
+}
+
+.shows{
+    transform: translateX(-20px);
+    flex-direction: column;
+    
+}
+
+
+/* banner2 */
+.banner2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bordo);
+    text-align: center;
+    letter-spacing: -0.13px;
+    height: 80px;
+}
+.banner2 h2 {
+    font-size: 16px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+.banner2 a {
+    margin: 20px;
+    color: var(--white);
+    text-decoration: underline;
+}
+.lenovoBanner{
+    display: none;
+    width: 100%;
+    height: 180px;
+    background: url("./img/Lenovo-banner.png") no-repeat center center/cover;
+}
+.lenovoBanner2{
+    display: none;
+    width: 100%;
+    height: 180px;
+    background: url("./img/banner2.jpg") no-repeat center center/cover;
+}
+@media (max-width: 1024px) {
+    .news-cards{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3px;
+        
+    }
+    .lenovoBanner{
+        display: block;
+    }
+    .hide{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #2f3640;
+    width: 50%;
+    height: 100%;
+    border-right: #ccc 1px solid;
+    opacity: 0.9;
+    padding: 30px;
+    transform: translateX(-1000px);
+    transition: transform 0.5s ease-in-out;
+    
+    }
+    .shows{
+        transform: translateX(-20px);
+        display: flex;
+        
+    }
+    .nav-2 ul{
+        margin: auto;
+    }
+    .nav-3 {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #2f3640;
+    width: 50%;
+    height: 100%;
+    border-right: #ccc 1px solid;
+    opacity: 0.9;
+    padding: 30px;
+    transform: translateX(-1000px);
+    transition: transform 0.5s ease-in-out;
+    }
+    .nav-4{
+        display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+        background: #2f3640;
+        width: 50%;
+        height: 100%;
+        border-right: #ccc 1px solid;
+        opacity: 0.9;
+        padding: 30px;
+        transform: translateX(-1000px);
+        transition: transform 0.5s ease-in-out;
+    }
+    .price{
+        display: none;
+    }
+    .news-cards{
+        justify-content: center;
+        text-align: center;
+        margin: auto;
+        align-items: center;
+    }
+    .productos{
+        place-items: center;
+        
+    }
+    .cards{
+        
+        place-items: center;
+        margin: auto;
+    }
+    .show{
+        display: none;
+    }
+    .hiden{
+        justify-content: space-between;
+        margin-bottom: 25px;
+        display: flex;
+    }
+    .Matching{
+        display: flex;
+    }
+    .conteiner2{
+        width: 90%;
+        
+    }
+    .menu-btn{
+        display: block;
+    }
+}
+
+@media (max-width: 750px) {
+    .lenovoBanner2{
+        display: block;
+    }
+    .lenovoBanner{
+        display: none;
+    }
+    .news-cards{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .show{
+        display: none;
+    }
+    .nav-1 ul li{
+        margin: auto;
+        justify-content: space-between
+    }
+    #searchBar{
+        border-radius: 5px;
+        width: 200px;
+        height: 35px;
+        font-size: 14px;
+        margin: 0%;
+        padding: 0%;
+    }
+    .search{
+        display: flex;
+        margin: 0px;
+        padding: 0%;
+    }
+    .searchBttn{
+        border-radius: 5px;
+        width: 40px;
+        height: 35px;
+        color: var(--white);
+        background-color: #000000;
+        padding-left: 0;
+        margin-left: 0;
+    }
+    .banner p {
+        font-size: 9px
+    }
+    .banner2  {
+        border-radius: 2px;
+        font-size: 9px;
+        height: 70px;
+    }
+    .high{
+    text-align: center;
+    padding: 10px;
+    width: 106px;
+    height: 38px;
+    font-size: 9px;
+    }
+    .Matching{
+        margin-left: 5px;
+        margin-bottom: 5px;
+    }
+    .menu-btn {
+        top: 49px;
+        right: 24px;
+        font-size: 20px;
+    }
+}
